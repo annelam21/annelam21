@@ -3,261 +3,268 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Staatliches|Source+Sans+Pro" rel="stylesheet">
     <style>
-body {
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-button {
-  border-color: #fffcf7;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-button:hover {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 2px 3px 5px 0 rgba(0,0,0,0.19);
-}
-#welcomeImage {
-  background-image: url('choppingBoard.jpg');
-  height: 95%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#restaurantName {
-  font-family: 'Staatliches', cursive;
-  font-size: 10vh;
-  font-weight: normal;
-  color: white;
-  text-align: center;
-  padding-top: 20%;
-}
-.title {
-  text-align: center;
-  font-size: 5vh;
-}
-#toMenu {
-  width: 70px;
-  height: 70px;
-  margin: auto;
-  margin-top: 15%;
-}
-#toMenu img {
-  width: 70px;
-  height: 70px;
-}
-#menu {
-  width: 100%;
-  height: 1100px;
-}
-.divs {
-  width: 33%;
-  height: 550px;
-  float: left;
-  text-align: center;
-}
-.images {
-  width: 300px;
-  height: 300px;
-  margin: auto;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-#image1 {
-  background-image: url('friedRice.jpg');
-}
-#image2 {
-  background-image: url('friedNoodles.jpg');
-}
-#image3 {
-  background-image: url('steamedPorkBun.jpeg');
-}
-#image4 {
-  background-image: url('eggTart.jpg');
-}
-#image5 {
-  background-image: url('jasmineTea.jpg');
-}
-#image6 {
-  background-image: url('greenTea.jpg');
-  background-position-x: -40px;
-}
+      body {
+        margin: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+      button {
+        border-color: #fffcf7;
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+      button:hover {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 2px 3px 5px 0 rgba(0,0,0,0.19);
+      }
+      #welcomeImage {
+        background-image: url('coverOption3.jpg');
+        height: 95%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #restaurantName {
+        font-family: 'Staatliches', cursive;
+        font-size: 10vh;
+        font-weight: normal;
+        color: white;
+        text-align: center;
+        padding-top: 20%;
+      }
+      .title {
+        text-align: center;
+        font-size: 5vh;
+      }
+      #toMenu {
+        width: 70px;
+        height: 70px;
+        margin: auto;
+        margin-top: 15%;
+      }
+      #toMenu img {
+        width: 70px;
+        height: 70px;
+      }
+      /*#menu {
+        width: 100%;
+        height: 1100px;
+      }*/
+      #topsDiv {
+        width: 100%;
+        height: 140%;
+      }
+      .divs {
+        width: 33%;
+        height: 550px;
+        float: left;
+        text-align: center;
+      }
+      .images {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .rapText {
+        width: 68%;
+        margin: auto;
+      }
+      #image1 {
+        background-image: url('jacket.jpg');
+      }
+      #image2 {
+        background-image: url('tshirt.jpeg');
+        background-size: 100%; /*make shrink to fit*/
+      }
+      #image3 {
+        background-image: url('steamedPorkBun.jpeg');
+      }
+      #image4 {
+        background-image: url('eggTart.jpg');
+      }
+      #image5 {
+        background-image: url('jasmineTea.jpg');
+      }
+      #image6 {
+        background-image: url('greenTea.jpg');
+        background-position-x: -40px;
+      }
 
-#bottomNavBar {
-  width: 100%;
-  height: 40px;
-  background-color: #dcb361;
-  position: fixed;
-  bottom: 0;
-}
-.floatMe {
-  width: 25%;
-  height: 30px;
-  float: left;
-  text-align: center;
-  padding-top: 5px;
-}
-.dollarSign {
-  display: inline;
-}
-#end {
-  margin-top: 0.3vh;
-  background-color: #dcb361;
-}
-
-/*Page 2-----------------------------------------------------------------------------------------------------------------------------------------------*/
-#container {
-  width: 80%;
-  min-height: 85%;
-  overflow: auto;
-  margin: auto;
-  margin-top: 2%;
-  border: solid;
-}
-#title {
-  text-align: center;
-  font-weight: bold;
-}
-table {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  border-collapse: collapse;
-}
-.topInfo {
-  background-color: #dcb361;
-  font-weight: bold;
-  width: 25%;
-}
-#spacing {
-  width: 20%;
-  height: 28%;
-}
-#finalTotals {
-  width: 20%;
-  height: 15%;
-  margin: auto;
-  text-align: center;
-}
+      /*#bottomNavBar {
+        width: 100%;
+        height: 40px;
+        background-color: #dcb361;
+        position: fixed;
+        bottom: 0;
+      }*/
+      .floatMe {
+        width: 25%;
+        height: 30px;
+        float: left;
+        text-align: center;
+        padding-top: 5px;
+      }
+      .dollarSign {
+        display: inline;
+      }
+      #end {
+        margin-top: 0.3vh;
+        background-color: #dcb361;
+      }
     </style>
   </head>
   <body>
     <div id="welcomeImage">
-      <h1 id="restaurantName">R e s t a u r a n t&ensp;C h a n c e u x</h1> <!--Restaurant Chanceux-->
-      
-      <div id="toMenu"><a href="#menuTitle" title="Go to Menu"><img src="ARROW.PNG"></a></div>
+      <h1 id="restaurantName">N A M E&ensp;G O E S&ensp;H E R E</h1> <!--Restaurant Chanceux-->
+      <div id="toMenu"><a href="#topsTitle" title="Browse"><img src="ARROW.PNG"></a></div> <!--Animation arrow-->
     </div>
     
     <br>
-    <h1 class="title" id="menuTitle">Menu</h1>
-
-    <div id="menu">
-
-    <div class="divs">
-      <div id="image1" class="images"></div>
-
-      <h3 id="nameOne"></h3>
-      <span id="spanOne"><p class="dollarSign">$</p><p class="dollarSign" id="priceOne"></p></span>
-      <br><br>
-      <select id="selOne">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-      <button id="bttnOne" onclick="dishOne()">Order</button>
-    </div>
-
-    <div class="divs">
-      <div id="image2" class="images"></div>
-  
-      <h3 id="nameTwo"></h3>
-      <span id="spanTwo"><p class="dollarSign">$</p><p class="dollarSign" id="priceTwo"></p></span>
-      <br><br>
-      <select id="selTwo">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-      <button id="bttnTwo" onclick="dishTwo()">Order</button>
-    </div>
     
-    <div class="divs">
-      <div id="image3" class="images"></div>
-  
-       <h3 id="nameThree"></h3>
-      <span id="spanThree"><p class="dollarSign">$</p><p class="dollarSign" id="priceThree"></p></span>
-      <br><br>
-      <select id="selThree">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-      <button id="bttnThree" onclick="dishThree()">Order</button>
-    </div>
+    <div id="topsDiv"> <!--div for all topwear-->
+      <h1 class="title" id="topsTitle">Les Hauts (Tops)</h1>
+      <br>
+
+    <div class="divs"> <!--item 1's box-->
+      <div id="image1" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un blouson</h3> <!--name-->
+        <p>Le garçon porte un blouson simple bleu. Le blouson a deux rayures jaunes.</p> <!--description-->
+        <p class="dollarSign">13,18</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 1-->
+
+    <div class="divs"> <!--item 2's box-->
+      <div id="image2" class="images"></div> <!--image-->
+      
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un tee-shirt</h3> <!--name-->
+        <p>description</p> <!--description-->
+        <p class="dollarSign"></p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 2-->
+    
+    <div class="divs"> <!--item 3's box-->
+      <div id="image3" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Une chemise en flanelle</h3> <!--name-->
+        <p>description</p> <!--description-->
+        <p class="dollarSign">13,18</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 3-->
     
 
-    <div class="divs">
-      <div id="image4" class="images"></div>
-  
-      <h3 id="nameFour"></h3>
-      <span id="spanFour"><p class="dollarSign">$</p><p class="dollarSign" id="priceFour"></p></span>
-      <br><br>
-      <select id="selFour">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-      <button id="bttnFour" onclick="dishFour()">Order</button>
-    </div>
-    
-    <div class="divs">
-      <div id="image5" class="images"></div>
-  
-      <h3 id="nameFive"></h3>
-      <span id="spanFive"><p class="dollarSign">$</p><p class="dollarSign" id="priceFive"></p></span>
-      <br><br>
-      <select id="selFive">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-      <button id="bttnFive" onclick="dishFive()">Order</button>
-    </div>
+    <div class="divs"> <!--item 4's box-->
+      <div id="image4" class="images"></div> <!--image-->
 
-    <div class="divs">
-      <div id="image6" class="images"></div>
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un</h3> <!--name-->
+        <p>description</p> <!--description-->
+        <p class="dollarSign">13,18</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 4-->
     
-      <h3 id="nameSix"></h3>
-      <span id="spanSix"><p class="dollarSign">$</p><p class="dollarSign" id="priceSix"></p></span>
-      <br><br>
-      <select id="selSix">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-      <button id="bttnSix" onclick="dishSix()">Order</button>
-    </div>
+    <div class="divs"> <!--item 5's box-->
+      <div id="image5" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un</h3> <!--name-->
+        <p>description</p> <!--description-->
+        <p class="dollarSign">13,18</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 5-->
+
+    <div class="divs"> <!--item 6's box-->
+      <div id="image6" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un</h3> <!--name-->
+        <p>description</p> <!--description-->
+        <p class="dollarSign">13,18</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 6-->
     
-    </div>
+    </div> <!--end of topwear-->
+
+    <!--better separate sections<br><br><br><br>-->
+<!--------------------------------------------------------------------------------------------------------------------------------------------->    
+
+    <div id="bottomsDiv"> <!--div for all bottomwear-->
+      <h1 class="title" id="menuTitle">Les bas (Bottoms)</h1>
+      <br>
+
+    <div class="divs"> <!--item 7's box--> <!--three numbers to change-->
+      <div id="image7" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>name</h3> <!--name-->
+        <p></p> <!--description-->
+        <p class="dollarSign">13,18</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 7-->
+
+    <div class="divs"> <!--item 8's box-->
+      <div id="image8" class="images"></div> <!--image-->
+      
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>name</h3> <!--name-->
+        <p></p> <!--description-->
+        <p class="dollarSign"></p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 8-->
     
-    <div id="bottomNavBar">
+    <div class="divs"> <!--item 9's box-->
+      <div id="image9" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>name</h3> <!--name-->
+        <p>description</p> <!--description-->
+        <p class="dollarSign">13,18</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 9-->
+    
+
+    <div class="divs"> <!--item 10's box-->
+      <div id="image10" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un</h3> <!--name-->
+        <p>description</p> <!--description-->
+        <p class="dollarSign">13,18</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 10-->
+    
+    <div class="divs"> <!--item 11's box-->
+      <div id="image11" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un</h3> <!--name-->
+        <p>description</p> <!--description-->
+        <p class="dollarSign">13,18</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 11-->
+
+    <div class="divs"> <!--item 12's box-->
+      <div id="image12" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un</h3> <!--name-->
+        <p>description</p> <!--description-->
+        <p class="dollarSign">13,18</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 12-->
+    
+    </div> <!--end of bottomwear-->
+
+
+    <!--<div id="bottomNavBar">
       <div class="floatMe"><h2 class="dollarSign">Subtotal: $</h2><h2 class="dollarSign" id="showSubtotal">0.00</h2></div>
       <div class="floatMe"><h2 class="dollarSign">Tax: $</h2><h2 class="dollarSign" id="showTax">0.00</h2></div>
       <div class="floatMe"><h2 class="dollarSign">Total: $</h2><h2 class="dollarSign" id="showTotal">0.00</h2></div>
       <div class="floatMe"><button id="end" onclick="checkout()">Proceed to Checkout</button></div>
     </div>
-    <br>
-    <script src="catalog.js"></script>
+    <br>-->
   </body>
 </html>
