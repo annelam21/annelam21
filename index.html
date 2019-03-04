@@ -32,11 +32,11 @@
       .title {
         text-align: center;
         font-size: 5vh;
+        text-decoration: underline;
       }
       #toMenu {
         width: 70px;
         height: 70px;
-        background-color: red;
         position: absolute;
         left: 0;
         right: 0;
@@ -73,7 +73,8 @@
         margin: auto;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: top;
+        /*background-position: center;*/
       }
       .rapText {
         width: 68%;
@@ -89,49 +90,59 @@
         background-image: url('flannel.jpg');
       }
       #image4 {
-        background-image: url('pullover.jpg'); /*move so more head, less jeans*/
+        background-image: url('pullover.jpg');
       }
       #image5 {
-        background-image: url('sweatshirt.jpg');
+        background-image: url('polo.jpg');
       }
       #image6 {
         background-image: url('hoodie.jpg');
       }
       #image7 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('pants.jpg');
+        background-size: contain;
       }
       #image8 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('shorts.jpg');
       }
       #image9 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('floralBoardshorts.jpg');
+        background-size: 150%;
+        background-position: 50% 90%;
       }
       #image10 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('jeans.jpg');
       }
       #image11 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('leggings.jpg');
       }
       #image12 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('skirt.jpg');
       }
       #image13 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('shoes.jpg');
+        background-size: 200%; /*250*/
+        background-position: 100% 100%;
       }
       #image14 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('desTennis.jpg');
+        background-size: contain;
+        background-position: center;
       }
       #image15 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('sandals.jpg');
+        background-position: 30%;
       }
       #image16 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('cap.jpg');
       }
       #image17 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('hat.jpg');
+        background-position: 60%;
       }
       #image18 {
-        background-image: url('jasmineTea.jpg');
+        background-image: url('sunglasses.jpg');
+        background-position: 11% 0%;
       }
       /*#bottomNavBar {
         width: 100%;
@@ -158,14 +169,15 @@
   </head>
   <body>
     <div id="welcomeImage">
-      <h1 id="restaurantName">N A M E&ensp;G O E S&ensp;H E R E</h1> <!--Restaurant Chanceux-->
+      <h1 id="restaurantName">P A L A I S&ensp;D E S&ensp;E N F A N T S</h1> <!--Restaurant Chanceux-->
+      <!--<h4>"Nous avons ce que vos enfants veulent."</h4>--> <!--We have what your children want.-->
       <div id="toMenu"><a href="#topsTitle" title="Browse"><img src="ARROW.PNG"></a></div> <!--Animation arrow-->
     </div>
     
     <br>
     
     <div class="twoRows"> <!--div for all topwear-->
-      <h1 class="title" id="topsTitle">Les Hauts (Tops)</h1> <!--id for anchoring-->
+      <h1 class="title" id="topsTitle">Les Hauts</h1> <!--Tops--> <!--id for anchoring-->
       <br>
 
     <div class="divs"> <!--item 1's box-->
@@ -183,7 +195,7 @@
       
       <div class="rapText"> <!--limit span width of text-->
         <h3>Un tee-shirt</h3> <!--name-->
-        <p>description</p> <!--description-->
+        <p>Le garçon porte un tee-shirt marron foncé. Le tee-shirt a un dessin de léopard. Il a aussi un cœur marron clair au centre.</p> <!--it also has a light brown heart in the center.--> <!--description-->
         <p class="dollarSign">8,70</p><p class="dollarSign">€</p> <!--price-->
       </div>
     </div> <!--end of item 2-->
@@ -193,8 +205,8 @@
 
       <div class="rapText"> <!--limit span width of text-->
         <h3>Une chemise en flanelle</h3> <!--name-->
-        <p>description</p> <!--description-->
-        <p class="dollarSign"></p><p class="dollarSign">€</p> <!--price-->
+        <p>Le garçon a une chemise en flanelle vert avec des lignes noire et des boutons blanc.</p> <!--description-->
+        <p class="dollarSign"></p><p class="dollarSign">12,55€</p> <!--price-->
       </div>
     </div> <!--end of item 3-->
     
@@ -204,8 +216,8 @@
 
       <div class="rapText"> <!--limit span width of text-->
         <h3>Un pull</h3> <!--name-->
-        <p>description</p> <!--description-->
-        <p class="dollarSign"></p><p class="dollarSign">€</p> <!--price-->
+        <p>La fille porte un pull beige. Le pull est très confortable.</p> <!--description-->
+        <p class="dollarSign">12,60</p><p class="dollarSign">€</p> <!--price-->
       </div>
     </div> <!--end of item 4-->
     
@@ -213,9 +225,9 @@
       <div id="image5" class="images"></div> <!--image-->
 
       <div class="rapText"> <!--limit span width of text-->
-        <h3>Un sweat</h3> <!--name-->
-        <p>description</p> <!--description-->
-        <p class="dollarSign"></p><p class="dollarSign">€</p> <!--price-->
+        <h3>Un polo</h3> <!--name-->
+        <p>Le garçon a un polo rouge.</p> <!--description-->
+        <p class="dollarSign">11,46</p><p class="dollarSign">€</p> <!--price-->
       </div>
     </div> <!--end of item 5-->
 
@@ -224,8 +236,8 @@
 
       <div class="rapText"> <!--limit span width of text-->
         <h3>Un sweat à capuche</h3> <!--name-->
-        <p>description</p> <!--description-->
-        <p class="dollarSign"></p><p class="dollarSign">€</p> <!--price-->
+        <p>La fille a un sweat à capuche violet. Il a une grande poche.</p> <!--description--> <!--It has a big pocket.-->
+        <p class="dollarSign">14,12</p><p class="dollarSign">€</p> <!--price-->
       </div>
     </div> <!--end of item 6-->
     
@@ -234,7 +246,7 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------->    
     
     <div class="twoRows"> <!--div for all bottomwear-->
-      <h1 class="title" id="bottomsTitle">Les bas (Bottoms)</h1> <!--id for anchoring-->
+      <h1 class="title" id="bottomsTitle">Les bas</h1> <!--Bottoms--> <!--id for anchoring-->
       <br>
 
     <div class="divs"> <!--item 7's box-->
@@ -303,7 +315,7 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------->   
 
     <div class="oneRow"> <!--div for all footwear-->
-      <h1 class="title" id="footwearTitle">Les Chaussures (Footwear)</h1> <!--id for anchoring-->
+      <h1 class="title" id="footwearTitle">Les Chaussures</h1> <!--Footwear--> <!--id for anchoring-->
       <br>
 
     <div class="divs"> <!--item 13's box--> <!--three numbers to change-->
@@ -367,8 +379,8 @@
       <div id="image18" class="images"></div> <!--image-->
 
       <div class="rapText"> <!--limit span width of text-->
-        <h3>Une ceinture</h3> <!--name-->
-        <p>description</p> <!--description-->
+        <h3>Des lunettes de soleil</h3> <!--name-->
+        <p>description</p> <!--le bébé--> <!--description-->
         <p class="dollarSign"></p><p class="dollarSign">€</p> <!--price-->
       </div>
     </div> <!--end of item 18-->
