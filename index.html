@@ -3,6 +3,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Staatliches|Source+Sans+Pro" rel="stylesheet">
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         margin: 0;
         font-family: 'Source Sans Pro', sans-serif;
@@ -144,12 +147,23 @@
         background-image: url('sunglasses.jpg');
         background-position: 11% 0%;
       }
-      /*#bottomNavBar {
+      #topNavBar {
         width: 100%;
         height: 40px;
         background-color: #dcb361;
         position: fixed;
-        bottom: 0;
+        top: 0;
+      }
+      #logo {
+        float: left;
+      }
+      #topNavBar a {
+        float: right;
+        display: block; /*do i need this?*/
+        text-align: center;
+      }
+      /*#topNavBar a:hover {
+        //text shadow stuff
       }*/
       .floatMe {
         width: 25%;
@@ -389,12 +403,17 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <!--<div id="leftSideNavBar"> do like a list or something
-      <div class="floatMe"><h2 class="dollarSign">Subtotal: $</h2><h2 class="dollarSign" id="showSubtotal">0.00</h2></div>
+    <div id="topNavBar">
+      <p id="logo">Palais des Enfants</p> <!--id for font and stuff-->
+      <a href="#topsTitle">Les Hauts</a>
+      <a href="#bottomsTitle">Les Bas</a>
+      <a href="#footwearTitle">Les Chaussures</a>
+      <a href="accessoryTitle">Les Accessoires</a>
+      <!--<div class="floatMe"><h2 class="dollarSign">Subtotal: $</h2><h2 class="dollarSign" id="showSubtotal">0.00</h2></div>
       <div class="floatMe"><h2 class="dollarSign">Tax: $</h2><h2 class="dollarSign" id="showTax">0.00</h2></div>
       <div class="floatMe"><h2 class="dollarSign">Total: $</h2><h2 class="dollarSign" id="showTotal">0.00</h2></div>
-      <div class="floatMe"><button id="end" onclick="checkout()">Proceed to Checkout</button></div>
+      <div class="floatMe"><button id="end" onclick="checkout()">Proceed to Checkout</button></div>-->
     </div>
-    <br>-->
+    <br>
   </body>
 </html>
