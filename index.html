@@ -1,7 +1,7 @@
 <html>
   <head>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Staatliches|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches|Source+Sans+Pro|Pacifico" rel="stylesheet">
     <style>
       html {
         scroll-behavior: smooth;
@@ -10,13 +10,6 @@
         margin: 0;
         font-family: 'Source Sans Pro', sans-serif;
       }
-      button {
-        border-color: #fffcf7;
-        font-family: 'Source Sans Pro', sans-serif;
-      }
-      button:hover {
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 2px 3px 5px 0 rgba(0,0,0,0.19);
-      }
       #welcomeImage {
         background-image: url('coverOption3.jpg');
         height: 95%;
@@ -24,13 +17,20 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
-      #restaurantName {
-        font-family: 'Staatliches', cursive;
+      #catalogName {
+        font-family: 'Pacifico', cursive;
         font-size: 10vh;
         font-weight: normal;
         color: white;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: violet; /*black*/
         text-align: center;
         padding-top: 20%;
+      }
+      mark {
+        background-color: rgba(120,224,85,0.9);
+        color: white;
+        border-radius: 20px;
       }
       .title {
         text-align: center;
@@ -52,17 +52,13 @@
         width: 100%;
         height: 100%;
       }
-      /*#menu {
-        width: 100%;
-        height: 1100px;
-      }*/
       .twoRows {
         width: 100%;
         height: 150%;
       }
       .oneRow {
         width: 100%;
-        height: 86%; /*or 88%*/
+        height: 90%; /*or 88%*/
       }
       .divs {
         width: 33%;
@@ -149,45 +145,48 @@
       }
       #topNavBar {
         width: 100%;
-        height: 40px;
-        background-color: #dcb361;
+        height: 6%;
+        background-color: #e055bd;
         position: fixed;
         top: 0;
+        font-size: 190%;
       }
-      #topNavBar a {
+      .floatRight {
         float: right;
-        width: 8%;
-        height: 40px;
-        /*display: block; /*do i need this?*/
+        width: 17%;
+        height: 6%;
+        font-family: Staatliches;
+        color: white;
         text-align: center;
+        text-decoration: none;
+        position: relative;
+        top: 15%;
       }
       #logo {
         float: left;
+        width: 24%;
+        height: 6%;
+        font-family: Pacifico;
+        color: white;
+        text-decoration: none;
       }
-      /*#topNavBar a:hover {
-        //text shadow stuff
-      }*/
-      .floatMe {
-        width: 25%;
-        height: 30px;
-        float: left;
-        text-align: center;
-        padding-top: 5px;
+      #topsTitle {
+        padding: 3%; /*anchor to 3% above the target*/
+      }
+      #topNavBar a:hover {
+        text-decoration: underline;
       }
       .dollarSign {
         display: inline;
-      }
-      #end {
-        margin-top: 0.3vh;
-        background-color: #dcb361;
       }
     </style>
   </head>
   <body>
     <div id="welcomeImage">
-      <h1 id="restaurantName">P A L A I S&ensp;D E S&ensp;E N F A N T S</h1> <!--Restaurant Chanceux-->
-      <!--<h4>"Nous avons ce que vos enfants veulent."</h4>--> <!--We have what your children want.-->
-      <div id="toMenu"><a href="#topsTitle" title="Browse"><img src="ARROW.PNG"></a></div> <!--Animation arrow-->
+      <div id="boxAroundMainName">
+        <h1 id="catalogName"><mark>&ensp;PALAIS DES ENFANTS&ensp;</mark></h1> <!--P A L A I S&ensp;D E S&ensp;E N F A N T S-->
+      </div>
+      <div id="toMenu"><a href="#topsTitle"><img src="ARROW.PNG"></a></div> <!--Animation arrow-->
     </div>
     
     <br>
@@ -406,15 +405,11 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div id="topNavBar">
-      <p id="logo">Palais des Enfants</p> <!--id for font and stuff-->
-      <a href="#topsTitle">Les Hauts</a>
-      <a href="#bottomsTitle">Les Bas</a>
-      <a href="#footwearTitle">Les Chaussures</a>
-      <a href="accessoryTitle">Les Accessoires</a>
-      <!--<div class="floatMe"><h2 class="dollarSign">Subtotal: $</h2><h2 class="dollarSign" id="showSubtotal">0.00</h2></div>
-      <div class="floatMe"><h2 class="dollarSign">Tax: $</h2><h2 class="dollarSign" id="showTax">0.00</h2></div>
-      <div class="floatMe"><h2 class="dollarSign">Total: $</h2><h2 class="dollarSign" id="showTotal">0.00</h2></div>
-      <div class="floatMe"><button id="end" onclick="checkout()">Proceed to Checkout</button></div>-->
+      <a href="#accessoryTitle" class="floatRight">Les Accessoires</a>
+      <a href="#footwearTitle" class="floatRight">Les Chaussures</a>
+      <a href="#bottomsTitle" class="floatRight">Les Bas</a>
+      <a href="#topsTitle" class="floatRight">Les Hauts</a>
+      <a href="#catalogName" id="logo">Palais des Enfants</p> <!--id for font and stuff-->
     </div>
     <br>
   </body>
