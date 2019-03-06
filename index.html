@@ -1,0 +1,418 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches|Source+Sans+Pro|Pacifico" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+      #welcomeImage {
+        background-image: url('coverOption3.jpg');
+        height: 95%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #catalogName {
+        font-family: 'Pacifico', cursive;
+        font-size: 10vh;
+        font-weight: normal;
+        color: white;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black; /*violet*/
+        text-align: center;
+        padding-top: 20%;
+      }
+      mark {
+        background-color: rgba(0,0,0,0.9); /*greenish 120,224,85,0.9*/
+        color: white;
+        border-radius: 20px;
+      }
+      .title {
+        text-align: center;
+        font-size: 5vh;
+        text-decoration: underline;
+      }
+      #toMenu {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 10%;
+        /*margin-top: 15%;*/
+        
+      }
+      #toMenu img {
+        width: 100%;
+        height: 100%;
+      }
+      .twoRows {
+        width: 100%;
+        height: 1400px; /*150%*/
+      }
+      .oneRow {
+        width: 100%;
+        height: 700px; /*or 90%*/
+      }
+      .divs {
+        width: 33%;
+        height: 660px;
+        
+        float: left;
+        text-align: center;
+      }
+      .images {
+        width: 300px;
+        height: 400px;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        /*background-position: center;*/
+      }
+      .rapText {
+        width: 68%;
+        margin: auto;
+      }
+      #image1 {
+        background-image: url('jacket.jpg');
+      }
+      #image2 {
+        background-image: url('tshirt.jpeg');
+      }
+      #image3 {
+        background-image: url('flannel.jpg');
+      }
+      #image4 {
+        background-image: url('pullover.jpg');
+      }
+      #image5 {
+        background-image: url('polo.jpg');
+      }
+      #image6 {
+        background-image: url('hoodie.jpg');
+      }
+      #image7 {
+        background-image: url('pants.jpg');
+        background-size: contain;
+      }
+      #image8 {
+        background-image: url('shorts.jpg');
+      }
+      #image9 {
+        background-image: url('floralBoardshorts.jpg');
+        background-size: 150%;
+        background-position: 50% 90%;
+      }
+      #image10 {
+        background-image: url('jeans.jpg');
+      }
+      #image11 {
+        background-image: url('leggings.jpg');
+      }
+      #image12 {
+        background-image: url('skirt.jpg');
+      }
+      #image13 {
+        background-image: url('shoes.jpg');
+        background-size: 200%; /*250*/
+        background-position: 100% 100%;
+      }
+      #image14 {
+        background-image: url('desTennis.jpg');
+        background-size: contain;
+        background-position: center;
+      }
+      #image15 {
+        background-image: url('sandals.jpg');
+        background-position: 30%;
+      }
+      #image16 {
+        background-image: url('cap.jpg');
+      }
+      #image17 {
+        background-image: url('hat.jpg');
+        background-position: 60%;
+      }
+      #image18 {
+        background-image: url('sunglasses.jpg');
+        background-position: 11% 0%;
+      }
+      #topNavBar {
+        width: 100%;
+        height: 8%;
+        background-color: #e055bd;
+        position: fixed;
+        top: 0;
+        font-size: 190%;
+      }
+      .floatRight {
+        float: right;
+        width: 17%;
+        height: 8%; /*6%*/
+        font-family: Staatliches;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        top: 15%;
+      }
+      #logo {
+        float: left;
+        width: 24%;
+        height: 6%;
+        font-family: Pacifico;
+        color: white;
+        text-decoration: none;
+      }
+      #topsTitle {
+        padding: 50px; /*anchor to 3% above the target*/
+      }
+      #topNavBar a:hover {
+        text-decoration: underline;
+      }
+      .dollarSign {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcomeImage">
+      <div id="boxAroundMainName">
+        <h1 id="catalogName">&ensp;PALAIS DES ENFANTS&ensp;</h1> <!--P A L A I S&ensp;D E S&ensp;E N F A N T S-->
+        <!--<h1 id="catalogName"><mark>&ensp;PALAIS DES ENFANTS&ensp;</mark></h1>--><!--mark is highlighting-->
+      </div>
+      <div id="toMenu"><a href="#topsTitle"><img src="ARROW.PNG"></a></div> <!--Animation arrow-->
+    </div>
+    
+    <br>
+    
+    <div class="twoRows"> <!--div for all topwear-->
+      <h1 class="title" id="topsTitle">Les Hauts</h1> <!--Tops--> <!--id for anchoring-->
+      <br>
+
+    <div class="divs"> <!--item 1's box-->
+      <div id="image1" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un blouson</h3> <!--name-->
+        <p>Le garçon porte un blouson bleu. Le blouson a deux rayures jaunes.</p> <!--description-->
+        <p class="dollarSign">13,18</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 1-->
+
+    <div class="divs"> <!--item 2's box-->
+      <div id="image2" class="images"></div> <!--image-->
+      
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un tee-shirt</h3> <!--name-->
+        <p>Le garçon porte un tee-shirt marron foncé. Le tee-shirt a un dessin de léopard. Il a aussi un cœur marron clair au centre.</p> <!--it also has a light brown heart in the center.--> <!--description-->
+        <p class="dollarSign">8,70</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 2-->
+    
+    <div class="divs"> <!--item 3's box-->
+      <div id="image3" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Une chemise en flanelle</h3> <!--name-->
+        <p>Le garçon a une chemise en flanelle verte avec des lignes noires et des boutons blancs.</p> <!--description-->
+        <p class="dollarSign"></p><p class="dollarSign">12,55€</p> <!--price-->
+      </div>
+    </div> <!--end of item 3-->
+    
+
+    <div class="divs"> <!--item 4's box-->
+      <div id="image4" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un pull</h3> <!--name-->
+        <p>La fille porte un pull beige. Le pull est très confortable.</p> <!--description-->
+        <p class="dollarSign">12,60</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 4-->
+    
+    <div class="divs"> <!--item 5's box-->
+      <div id="image5" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un polo</h3> <!--name-->
+        <p>Le garçon a un polo rouge.</p> <!--description-->
+        <p class="dollarSign">11,46</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 5-->
+
+    <div class="divs"> <!--item 6's box-->
+      <div id="image6" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un sweat à capuche</h3> <!--name-->
+        <p>La fille a un sweat à capuche violet. Il a une grande poche.</p> <!--description--> <!--It has a big pocket.-->
+        <p class="dollarSign">14,12</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 6-->
+    
+    </div> <!--end of topwear-->
+
+<!--..............................................................................................................................................-->
+    
+    <div class="twoRows"> <!--div for all bottomwear-->
+      <h1 class="title" id="bottomsTitle">Les bas</h1> <!--Bottoms--> <!--id for anchoring-->
+      <br>
+
+    <div class="divs"> <!--item 7's box-->
+      <div id="image7" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un pantalon</h3> <!--name-->
+        <p>La fille porte un pantalon bleu et long.</p> <!--soft = doux--> <!--description-->
+        <p class="dollarSign">9,70</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 7-->
+
+    <div class="divs"> <!--item 8's box-->
+      <div id="image8" class="images"></div> <!--image-->
+      
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un short</h3> <!--name-->
+        <p>Le garçon a un short simple et bleu.</p> <!--description-->
+        <p class="dollarSign">8,20</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 8-->
+    
+    <div class="divs"> <!--item 9's box-->
+      <div id="image9" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un short de surf à fleurs</h3> <!--name-->
+        <p>Le garçon porte un short de surf à fleurs coloré. Il y a du rouge, du orange, du vert, du bleu, et du blanc.</p> <!--description-->
+        <p class="dollarSign">15,87</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 9-->
+    
+
+    <div class="divs"> <!--item 10's box-->
+      <div id="image10" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un jean</h3> <!--name-->
+        <p>La fille a un jean bleu déchiré.</p> <!--description--> <!--ripped jeans-->
+        <p class="dollarSign">9,68</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 10-->
+    
+    <div class="divs"> <!--item 11's box-->
+      <div id="image11" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un legging</h3> <!--name-->
+        <p>La fille porte un legging noir.</p> <!--description-->
+        <p class="dollarSign">9,71</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 11-->
+
+    <div class="divs"> <!--item 12's box-->
+      <div id="image12" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Une jupe</h3> <!--name-->
+        <p>La fille a une très belle jupe rose et élégante à frou-frou.</p> <!--description-->
+        <p class="dollarSign">26,45</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 12-->
+    
+    </div> <!--end of bottomwear-->
+
+<!--..............................................................................................................................................-->
+
+    <div class="oneRow"> <!--div for all footwear-->
+      <h1 class="title" id="footwearTitle">Les Chaussures</h1> <!--Footwear--> <!--id for anchoring-->
+      <br>
+
+    <div class="divs"> <!--item 13's box--> <!--three numbers to change-->
+      <div id="image13" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Des chaussures</h3> <!--name-->
+        <p>La fille porte des chaussures rouges à pois blancs. Les chaussures sont mignonnes.</p> <!--description-->
+        <p class="dollarSign">30,90</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 13-->
+
+    <div class="divs"> <!--item 14's box-->
+      <div id="image14" class="images"></div> <!--image-->
+      
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Des tennis</h3> <!--white laces name-->
+        <p>La fille a des tennis noirs et blancs. Les tennis sont maintenant à la mode.</p> <!--modern description-->
+        <p class="dollarSign">43,14</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 14-->
+    
+    <div class="divs"> <!--item 15's box-->
+      <div id="image15" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Des sandales</h3> <!--name-->
+        <p>La fille a des sandales marron. Elles sont chouettes.</p> <!--description-->
+        <p class="dollarSign">11,35</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 15-->
+    
+    </div> <!--end of footwear-->
+<!--..............................................................................................................................................-->
+
+    <div class="oneRow"> <!--div for all accessories-->
+      <h1 class="title" id="accessoryTitle">Les Accessoires</h1> <!--id for anchoring-->
+      <br>
+
+    <div class="divs"> <!--item 16's box--> <!--three numbers to change-->
+      <div id="image16" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Une casquette</h3> <!--name-->
+        <p>La fille porte une casquette noire. La casquette a des inscriptions. Vous pouvez choisir les inscriptions!</p> <!--description-->
+        <p class="dollarSign">6,17</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 16-->
+
+    <div class="divs"> <!--item 17's box-->
+      <div id="image17" class="images"></div> <!--image-->
+      
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Un chapeau</h3> <!--name-->
+        <p>Le garçon a un chapeau gris. Le chapeau a une bande blanche avec des rayures rouges, orange, jaunes, et vertes.</p> <!--description-->
+        <p class="dollarSign">8,05</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 17-->
+    
+    <div class="divs"> <!--item 18's box-->
+      <div id="image18" class="images"></div> <!--image-->
+
+      <div class="rapText"> <!--limit span width of text-->
+        <h3>Des lunettes de soleil</h3> <!--name-->
+        <p>Le bébé porte des lunettes de soleil orange. Ces lunettes de soleil sont très géniales.</p> <!--apprécié description-->
+        <p class="dollarSign">12,35</p><p class="dollarSign">€</p> <!--price-->
+      </div>
+    </div> <!--end of item 18-->
+    
+    </div> <!--end of accessories-->
+
+<!--..............................................................................................................................................-->
+
+    <div id="topNavBar">
+      <a href="#accessoryTitle" class="floatRight">Les Accessoires</a>
+      <a href="#footwearTitle" class="floatRight">Les Chaussures</a>
+      <a href="#bottomsTitle" class="floatRight">Les Bas</a>
+      <a href="#topsTitle" class="floatRight">Les Hauts</a>
+      <a href="#catalogName" id="logo">Palais des Enfants</a> <!--id for font and stuff-->
+    </div>
+    <br>
+  </body>
+</html>
