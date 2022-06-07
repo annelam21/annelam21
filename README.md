@@ -1,2 +1,1 @@
-# annelam21
-Clothing Catalog Project
+# Clothing Catalog Project
